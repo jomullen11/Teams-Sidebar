@@ -1,0 +1,67 @@
+.cssTeamsMenu {
+    position: fixed;
+    transition: 1.3s;
+    top: 35vh;
+    padding: 5px;
+      z-index: 1;
+      left: -1px;
+      background: white;
+  }
+  
+  .cssMenuTitle {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-style: oblique;
+    font-size: x-large;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+      padding: 10px;
+      margin-left: -10px;	
+  }
+  
+  .teamIconContainer {
+    position: absolute;
+    left: -125px;
+    width: 10px;
+    top: -80px;
+      background: white;
+  }
+  
+  .teamIcon {
+    height: 50px;
+    width: 50px;
+    border-radius: 3px;
+    border: 1px solid transparent;
+  }
+  
+  .teamIcon:hover {
+    transform: scale(1.2) translateX(2px);
+    border-radius: 3px;
+    border: 1px solid whitesmoke;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  
+  @media (hover: hover) {
+  .cssTeamsMenu:hover {
+    margin-left: 125px;
+      z-index: 1;
+  }
+  }
+  
+  /* adding toggle */
+  #toggle {
+    position:fixed;
+    appearance:none;
+    cursor:pointer;
+    left:-100%;
+    top:-100%;
+      opacity: 0;
+  }
+  
+  #toggle:checked ~ .cssTeamsMenu {
+    margin-left: 125px;
+  }
+
+  
